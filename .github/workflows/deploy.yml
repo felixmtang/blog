@@ -28,3 +28,5 @@ jobs:
         with:
           push: true
           tags: ghcr.io/${{ github.repository_owner }}/blog:${{ github.sha }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
